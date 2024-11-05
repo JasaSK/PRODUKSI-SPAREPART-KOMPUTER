@@ -1,0 +1,147 @@
+*,
+html {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: "Arial", Helvetica, sans-serif;
+    background-color: rgb(176, 176, 176);
+}
+
+.brand {
+    width: auto;
+    height: auto;
+    font-size: 20px;
+    color: aliceblue;
+}
+
+nav {
+    position: sticky;
+    top: 0;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    background-color: rgb(39, 39, 39);
+    box-shadow: 0px 0px 50px 0px;
+    z-index: +1;
+}
+
+nav ul {
+    display: flex;
+    margin: 10px;
+    list-style-type: none;
+}
+
+nav ul li {
+    cursor: pointer;
+    padding: 10px;
+}
+
+nav ul li a {
+    display: flex;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    padding: 2.5px;
+    border-bottom: 1px solid rgba(193, 193, 193, 0);
+    transition: 0.3s ease;
+}
+
+nav ul li a:hover {
+    border-bottom: 1px solid rgb(202, 202, 202);
+}
+.pc {
+    border-bottom: 2px solid rgb(205, 205, 205);
+}
+/* Hamburger Menu */
+.hamburger-menu {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.hamburger-menu span {
+    width: 25px;
+    height: 3px;
+    background: #fff;
+    margin: 4px 15px 0 0;
+    transition: 0.4s;
+}
+
+.ikon-desktop {
+    display: inline-block;
+}
+.text-mobile {
+    display: none;
+}
+
+/* Responsive Styling */
+@media screen and (max-width: 768px) {
+    .brand {
+        max-width: 150px; /* Menentukan lebar maksimal brand di mobile */
+    }
+
+    nav {
+        width: 100%;
+    }
+
+    nav ul li {
+        width: 100%;
+    }
+    nav ul li:hover {
+        background-color: rgba(85, 85, 85, 0.3);
+    }
+    nav ul li a {
+        transition: none;
+    }
+    nav ul li a:hover {
+        border-bottom: none;
+    }
+    .pc {
+        border-bottom: none;
+    }
+
+    .nav-links {
+        margin: 0;
+        text-align: center;
+    }
+
+    nav ul.nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        background-color: rgb(39, 39, 39);
+        padding: 20px;
+        z-index: 1;
+    }
+
+    nav ul.nav-links.active {
+        display: flex;
+    }
+
+    .hamburger-menu {
+        display: flex;
+    }
+
+    .hamburger-menu.active span:nth-child(1) {
+        transform: rotate(45deg) translate(5px, 5px);
+    }
+
+    .hamburger-menu.active span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger-menu.active span:nth-child(3) {
+        transform: rotate(-45deg) translate(5px, -5px);
+    }
+    .ikon-desktop {
+        display: none;
+    }
+    .text-mobile {
+        display: inline-block;
+        color: #fff;
+    }
+}

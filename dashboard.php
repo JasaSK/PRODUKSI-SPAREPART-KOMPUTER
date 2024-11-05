@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="dashboard.css">
+    <link rel="stylesheet" href="css/dashboard.css">
     <script src="main.js"></script>
 </head>
 <body>
@@ -47,13 +47,13 @@
 				</a>
 			</li>
 			<li>
-				<a href="login.html">
+				<a href="login.php">
 					<i class="bx bx-log-in"></i>
 					<span class="links_name">Login</span>
 				</a>
 			</li>
 			<li>
-				<a href="index.html">
+				<a href="index.php">
 					<i class="bx bx-log-out"></i>
 					<span class="links_name">Log out</span>
 				</a>
