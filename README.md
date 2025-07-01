@@ -1,2 +1,3 @@
 ﻿# PRODUKSI-SPAREPART-KOMPUTER
-#Membuat Tampilan Web Sparepart komputer dengan html css javascript dasar
+
+# Create a computer spare part web display with basic html css javascript
